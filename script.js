@@ -45,12 +45,14 @@ check.addEventListener('click',turnOn,false);
 
 function strictMode(){
     if(strict){
+     document.getElementsByClassName('ssBtn')[1].style.backgroundColor = 'yellow';
         strict=false;
     }else{
+     document.getElementsByClassName('ssBtn')[1].style.backgroundColor = 'red';
         strict=true;
     }
 }
-document.getElementsByClassName('ssBtn')[1].addEventListener('click', strictMode, false);
+document.getElementsByClassName('ssBtn')[1].addEventListener('click', strictMode, false); //strick button click
 
 function play(){ //show buttons and play sound  
         if(ar.length=== 0){
