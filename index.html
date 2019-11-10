@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Simon game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simon game</title>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
-    <body>
-        <audio id="wrong" src='wrong.mp3' preload="auto"></audio>
-        <audio id="soundgreen" src='simonSound1.mp3' preload="auto"></audio>
-        <audio id="soundblue" src='simonSound2.mp3' preload="auto"></audio>
-        <audio id="soundyellow" src='simonSound3.mp3' preload="auto"></audio>
-        <audio id="soundred" src='simonSound4.mp3' preload="auto"></audio>
-        <h1>Simon game</h1>
-        <div id='game'>
-            <div id=menu><div id=score> </div>
-                <div class="ss"><p id='start'>Start</p><button type="button"  class='ssBtn' style='background-color:red'></button>
-                <p id='strict'>Strict</p><button type="button" class='ssBtn' style='background-color:yellow'></button></div>
-             <label class="switch">
-  <input type="checkbox" id='checkbox'>
-  <div class="slider"></div>
+<body>
+    <audio id="wrong" src='wrong.mp3' preload="auto"></audio>
+    <audio id="soundgreen" src='simonSound1.mp3' preload="auto"></audio>
+    <audio id="soundblue" src='simonSound2.mp3' preload="auto"></audio>
+    <audio id="soundyellow" src='simonSound3.mp3' preload="auto"></audio>
+    <audio id="soundred" src='simonSound4.mp3' preload="auto"></audio>
+    <h1>Simon game</h1>
+    <div id='game'>
+        <div id=menu><div id=score> </div>
+            <div class="ss"><p id='start'>Start</p><button type="button"  class='ssBtn' style='background-color:red'></button>
+            <p id='strict'>Strict</p><button type="button" class='ssBtn' style='background-color:yellow'></button></div>
+         <label class="switch">
+<input type="checkbox" id='checkbox'>
+<div class="slider"></div>
 </label>
-            </div>
-            <button type="button" class='mainBtn' id='green'></button>
-            <button type="button" class='mainBtn' id='red'></button>
-            <button type="button" class='mainBtn' id='yellow'></button>
-            <button type="button" class='mainBtn' id='blue'></button>
         </div>
-        <script src='script.js'></script>
-    </body>
+        <button type="button" class='mainBtn' id='green'></button>
+        <button type="button" class='mainBtn' id='red'></button>
+        <button type="button" class='mainBtn' id='yellow'></button>
+        <button type="button" class='mainBtn' id='blue'></button>
+    </div>
+    <script src='script.js'></script>
+</body>
 </html>
